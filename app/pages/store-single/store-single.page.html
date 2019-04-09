@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        <ion-text color="light">
+          <ion-text color="light" class="fw700"></ion-text>
+        </ion-text>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="light" (click)="cart()">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-slides pager="true">
+
+      <ion-slide>
+        <ion-img [src]="ShopImage"></ion-img>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-img [src]="ShopImage"></ion-img>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-img [src]="ShopImage"></ion-img>
+      </ion-slide>
+    </ion-slides>
+
+  <ion-item>
+
+    <ion-label>Shop Name</ion-label>
+
+    <ion-button fill="outline" slot="end">Area</ion-button>
+
+  </ion-item>
+
+  <ion-card-content>
+      Give basics a romantic update with styles like this lace poet top. 
+      Cut with a high neckline it comes with an intricate lace detail to the bust and flowing hemline.
+  </ion-card-content>
+
+  <ion-button size="full" shape="round" color="secondary" (click)="cart()">
+      <ion-icon name="cart">Add to Cart</ion-icon>
+    </ion-button>
+
+
+</ion-content>

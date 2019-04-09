@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button color="light"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+          <ion-text color="light">
+            <ion-text color="light" class="fw700"></ion-text>
+          </ion-text>
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button size="small" shape="round" color="light" routerLink="/cart">
+          <ion-icon name="cart"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+  </ion-header>
+<ion-content padding>
+  
+    <div #chartContainer class='chart-container'>
+        <canvas  #chartcanvas id="myChart"></canvas>
+    </div>
+
+    <ion-item lines="none">
+
+        <p slot="start">Transcation History</p>
+    
+        <ion-icon name="arrow-forward" slot="end"></ion-icon>
+    
+      </ion-item>
+
+      <ion-card>
+          <ion-card-header>
+            <div class="heading">Credit Topup</div>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+
+              <ion-col no-padding>
+               
+                <small><i> Bought 200 credits</i></small>
+              </ion-col>
+              <ion-col><ion-icon name="add-circle-outline"></ion-icon> 200 </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+            <ion-card-header>
+              Header
+            </ion-card-header>
+            <ion-card-content>
+              The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card>
+              <ion-card-header>
+                Header
+              </ion-card-header>
+              <ion-card-content>
+                The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+              </ion-card-content>
+            </ion-card>
+    
+</ion-content>

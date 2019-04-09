@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        <ion-text color="light">
+          <ion-text color="light" class="fw700"></ion-text>
+        </ion-text>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="light" (click)="cart()">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    
+
+    <ion-slides>
+
+        <ion-slide>
+
+            <ion-card>
+                <ion-item>
+                  
+                  <ion-label>Platinum Subscription </ion-label>
+                  <ion-button fill="solid" slot="end">Subscribe</ion-button>
+                </ion-item>
+              
+                <ion-card-content>
+                    <p> All packages one subscribes to shall be able to rent at 20% of the subscription fee.  </p>
+                    <ion-img [src]="Platinum"></ion-img>
+                    <h1> 10000 KSH </h1>
+                </ion-card-content>
+              </ion-card>
+
+        </ion-slide>
+    
+        <ion-slide>
+
+            <ion-card>
+                <ion-item>
+                  
+                  <ion-label>Gold Subscription </ion-label>
+                  <ion-button fill="solid" slot="end">Subscribe</ion-button>
+                </ion-item>
+              
+                <ion-card-content>
+                    <p> All packages one subscribes to shall be able to rent at 20% of the subscription fee.  </p>
+                    <ion-img [src]="Gold"></ion-img>
+                    <h1> 5000 KSH </h1>
+                </ion-card-content>
+              </ion-card>
+
+        </ion-slide>
+    
+        <ion-slide>
+
+            <ion-card>
+                <ion-item>
+                  
+                  <ion-label>Silver Subscription </ion-label>
+                  <ion-button fill="solid" slot="end">Subscribe</ion-button>
+                </ion-item>
+              
+                <ion-card-content>
+                    <p> All packages one subscribes to shall be able to rent at 20% of the subscription fee.  </p>
+                    <ion-img [src]="Silver"></ion-img>
+                    <h1> 3000 KSH </h1>
+                </ion-card-content>
+              </ion-card>
+
+        </ion-slide>
+
+        <ion-slide>
+
+            <ion-card>
+                <ion-item>
+                  
+                  <ion-label>Bronze Subscription </ion-label>
+                  
+                  <ion-button fill="solid" slot="end">Subscribe</ion-button>
+                </ion-item>
+              
+                <ion-card-content>
+                    <p> All packages one subscribes to shall be able to rent at 20% of the subscription fee.  </p>
+                    <ion-img [src]="Bronze"></ion-img>
+                    <h1> 1000 KSH </h1>
+                </ion-card-content>
+              </ion-card>
+
+        </ion-slide>
+
+      </ion-slides>
+
+
+</ion-content>

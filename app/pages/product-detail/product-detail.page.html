@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+          <ion-text color="light">
+            <ion-text color="light" class="fw700"></ion-text>
+          </ion-text>
+      </ion-title>
+      <ion-buttons slot="end">
+        <ion-button size="small" shape="round" color="light" (click)="cart()">
+          <ion-icon name="cart"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+
+    <ion-slides pager="true">
+
+        <ion-slide>
+            <ion-img src="http://app.vazy.co.ke/uploads/{{product.product?.main_image}}"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="http://app.vazy.co.ke/uploads/{{product.product?.main_image}}"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="http://app.vazy.co.ke/uploads/{{product.product?.main_image}}"></ion-img>
+    </ion-slide>
+    
+      </ion-slides>
+
+    <ion-item>
+
+      <ion-label>{{product?.product.name}}</ion-label>
+
+      <ion-button fill="outline" slot="end">Jacket</ion-button>
+
+    </ion-item>
+  
+    <ion-card-content>
+        <div [innerHTML]="product?.product.description"></div>
+      
+    </ion-card-content>
+
+    <ion-button size="full" shape="round" color="secondary" (click)="cart()">
+        <ion-icon name="cart">Add to Cart</ion-icon>
+      </ion-button>
+
+
+</ion-content>

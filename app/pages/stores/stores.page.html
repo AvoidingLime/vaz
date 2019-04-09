@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        <ion-text color="light">
+          <ion-text color="light" class="fw700"></ion-text>
+        </ion-text>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="light" (click)="cart()">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-searchbar [(ngModel)]="searchKey"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="light" (click)="searchFilter()">
+        <ion-icon name="options"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <div>
+
+      <ion-row>
+          <ion-col size="6" size-lg>
+              <ion-img class="product-img" [src]="StoreImage"></ion-img>
+
+               <div class="title">Shop Name</div>
+               <div class="price">+5km</div>
+
+          </ion-col>
+          <ion-col size="6" size-lg>
+              <ion-img class="product-img" [src]="StoreImage"></ion-img>
+
+               <div class="title">Shop Name</div>
+               <div class="price">+5km</div>
+
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="6" size-lg>
+                <ion-img class="product-img" [src]="StoreImage"></ion-img>
+  
+                 <div class="title">Shop Name</div>
+                 <div class="price">+5km</div>
+  
+            </ion-col>
+            <ion-col size="6" size-lg>
+                <ion-img class="product-img" [src]="StoreImage"></ion-img>
+  
+                 <div class="title">Shop Name</div>
+                 <div class="price">+5km</div>
+  
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+              <ion-col size="6" size-lg>
+                  <ion-img class="product-img" [src]="StoreImage"></ion-img>
+    
+                   <div class="title">Shop Name</div>
+                   <div class="price">+5km</div>
+    
+              </ion-col>
+              <ion-col size="6" size-lg>
+                  <ion-img class="product-img" [src]="StoreImage"></ion-img>
+    
+                   <div class="title">Shop Name</div>
+                   <div class="price">+5km</div>
+    
+              </ion-col>
+            </ion-row>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,38 @@
+:host {
+    ion-content {
+        --background: var(--ion-color-light);
+    }
+
+    ion-item {
+        border-radius: 0;
+        border-bottom: 1px dotted var(--ion-color-medium);
+    }
+
+    ion-card {
+        &.no-radius {
+            border-radius: 0;
+        }
+    }
+}
+.title {
+    text-align: center;
+    font-size: 16px;
+    font-weight:bold;
+    margin-top:15px;
+    margin-bottom:10px; 
+}
+.price {
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--ion-color-primary);
+}
+.product-img {
+    border: 1px solid #cdcdcd;
+}
+.add2cart{
+
+
+    border-radius:15px;
+
+}

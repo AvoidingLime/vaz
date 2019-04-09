@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        <ion-text color="light">
+          <ion-text color="light" class="fw700"></ion-text>
+        </ion-text>
+    </ion-title>
+    <ion-buttons slot="end">
+        <ion-button (click)="openCart()">
+          <ion-badge *ngIf="cart.length > 0">{{ cart.length }}</ion-badge>
+          <ion-icon slot="icon-only" name="cart"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar color="dark">
+    <ion-searchbar [(ngModel)]="searchKey"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button size="small" shape="round" color="medium" (click)="searchFilter()">
+        <ion-icon name="options"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+
+  <ion-item lines="none">
+
+    <p slot="start">Browse</p>
+
+    <ion-icon name="arrow-forward" slot="end"></ion-icon>
+
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <div>
+
+      <ion-row>
+          <ion-col size="6" size-lg  *ngFor="let product of data?.products" >
+            <ion-img width="200" height="200" src="http://app.vazy.co.ke/uploads/{{product.main_image}}" routerLink="/products/{{product.id}}"></ion-img>
+
+               <div class="title" routerLink="/products/{{product.id}}">{{product.name}}</div>
+               <div class="price">{{product.price}} KSH</div>
+
+               <ion-button expand="full" class="add2cart" (click)="addToCart(product)">Add to Cart</ion-button>
+
+          </ion-col>
+       
+        </ion-row>
+
+
+
+         
+  </div>
+
+  <ion-item lines="none">
+
+    <p slot="start">Shops Nearby</p>
+
+    <ion-icon name="arrow-forward" slot="end"></ion-icon>
+
+  </ion-item>
+
+  <ion-slides>
+
+    <ion-slide>
+
+        <ion-card class="bg-white">
+
+            <ion-img [src]="Bags"></ion-img>
+
+            <ion-button expand="full" color="dark" (click)="presentImage(Bags)" no-margin>
+              Bags
+            </ion-button>
+
+          </ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+
+        <ion-card class="bg-white">
+
+            <ion-img [src]="Accessories"></ion-img>
+            <ion-button expand="full" color="dark" (click)="presentImage(Accessories)" no-margin>
+                Accessories
+            </ion-button>
+
+          </ion-card>
+
+    </ion-slide>
+
+    <ion-slide>
+
+        <ion-card class="bg-white">
+
+            <ion-img [src]="Dresses"></ion-img>
+
+            <ion-button expand="full" color="dark" (click)="presentImage(Bags)" no-margin>
+                Dresses
+            </ion-button>
+
+          </ion-card>
+
+    </ion-slide>
+
+  </ion-slides>
+
+  
+</ion-content>
+  

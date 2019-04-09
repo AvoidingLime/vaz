@@ -1,0 +1,12 @@
+:host {
+    ion-content {
+        --background: var(--ion-color-secondary);
+    }
+
+    ion-list {
+        &.list-md {
+            padding: 0;
+            color:#fff ! important;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+      
+
+
+    <ion-card *ngFor="let item of selectedItems">
+
+       
+      
+        <ion-card-content>
+          
+          <ion-row >
+
+            <ion-col>
+                <ion-img width="150" height="150" src="http://app.vazy.co.ke/uploads/{{item.main_image}}"></ion-img>
+
+            </ion-col>
+
+            <ion-col>
+              <h5 class="name">{{item.name}}</h5>
+              <p>Sold by Prelin' Closet</p>
+              <p class="price">{{ item.price | currency:'KSh':'symbol' }}</p>
+              <ion-label slot="end" text-right>{{ (item.price * item.count) | currency:'Ksh':'symbol' }}</ion-label>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+                <p class="mt-5 center"><ion-icon name="trash"></ion-icon> &nbsp;Remove</p>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      
+      </ion-card>
+
+
+        <ion-item>
+            Total: <span slot="end">{{ total | currency:'Ksh':'symbol' }}</span>
+          </ion-item>
+       
+       
+      
+
+</ion-content>
