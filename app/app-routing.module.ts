@@ -14,10 +14,10 @@ const routes: Routes = [
   { path: 'subscriptions', loadChildren: './pages/subscriptions/subscriptions.module#SubscriptionsPageModule' },
   { path: 'orders', loadChildren: './pages/orders/orders.module#OrdersPageModule' },
   { path: 'categories', loadChildren: './pages/categories/categories.module#CategoriesPageModule' },
-  { path: '', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' },
   { path: 'wallet', loadChildren: './pages/wallet/wallet.module#WalletPageModule' },
-  { path: 'walkthrough', loadChildren: './pages/walkthrough/walkthrough.module#WalkthroughPageModule' },
+  { path: '', loadChildren: './pages/walkthrough/walkthrough.module#WalkthroughPageModule' },
 ];
 
 @NgModule({
